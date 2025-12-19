@@ -15,12 +15,12 @@ user_dialog = Dialog(
         Format('{text}'),
         Button(Const('💬GPT чат'), id='gpt_chat_switcher', on_click=getters.gpt_switcher),
         Row(
-            SwitchTo(Const('🏞Изображение'), id='image_menu_switcher', state=startSG.image_menu),
+            SwitchTo(Const('🏞Фото'), id='image_menu_switcher', state=startSG.image_menu),
             SwitchTo(Const('🎞Видео'), id='video_menu_switcher', state=startSG.video_menu)
         ),
         Column(
-            SwitchTo(Const('👨‍🏫Cтудентам и школьникам'), id='students_menu_switcher', state=startSG.students_menu),
-            SwitchTo(Const('👤Профиль'), id='profile_switcher', state=startSG.profile),
+            SwitchTo(Const('👨‍🏫Школьникам'), id='students_menu_switcher', state=startSG.students_menu),
+            SwitchTo(Const('👤Личный кабинет'), id='profile_switcher', state=startSG.profile),
             #SwitchTo(Const('🎁Задания'), id='tasks_menu_swithcer', state=startSG.tasks_menu),
             Start(Const('💰Пополнить баланс'), id='payment_menu', state=PaymentSG.choose_rate),
             Start(Const('Админ панель'), id='admin', state=adminSG.start, when='admin')
