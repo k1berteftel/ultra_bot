@@ -183,7 +183,7 @@ user_dialog = Dialog(
         Column(
             Url(Const('✈️Поделиться'), id='share_url', url=Format('{url}')),
             Start(Const('💰Пополнить баланс'), id='payment_menu', state=PaymentSG.choose_rate),
-            Url(Const('ℹ️Помощь'), id='help_url', url=Const('https://t.me/ultragptsupport_bot')),
+            Url(Const('ℹ️Помощь'), id='help_url', url=Const('https://t.me/flexgpthelpbot')),
         ),
         SwitchTo(Const('⬅️Назад'), id='back', state=startSG.start),
         getter=getters.profile_getter,
